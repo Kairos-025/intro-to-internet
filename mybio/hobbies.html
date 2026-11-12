@@ -1,89 +1,71 @@
-<!--?xml version="1.0" encoding="UTF-8"?-->
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhmtl11/DTD/xhtml11.dtd">
-<!-- XML/XHTML boilerplate code -->
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head>
-    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
-        <title>Hobbies</title>
-        <link rel="shortcut icon" href="./MYBio.png" type="image/x-icon">
-        <link rel="stylesheet" href="mycss.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hobbies | My Bio</title>
+  <meta name="description" content="Ekemini John: things i like.">
+  <link rel="icon" href="MYBio.png" type="image/png">
+  <link rel="stylesheet" href="mycss.css">
 </head>
-
-<body>  
-    <nav class="topnav">
-        <a href="mybio.html" style="margin: 0px; padding: 0px;">
-            <img src="./MYBio.png" alt="MyBio" width="100px" height="80px" style="margin: 0px; padding: 0px;">
-        </a>
-            <div class="split">
-                <a href="mybio.html" id="link">Home</a>
-                <a href="education.html" id="link">Education</a>
-                <a href="work.html" id="link">Work</a>
-                <a href="hobbies.html" class="home" id="link">Hobbies</a>
-            </div>
+<body id="top">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="topnav">
+    <a class="brand" href="mybio.html"><img src="MYBio.png" alt="My Bio home" width="100" height="80"></a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="mybio.html">Home</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="hobbies.html" aria-current="page">Hobbies</a></li>
+      </ul>
     </nav>
-    <div class="header">
-        <header>
-            <h1>Things I Like</h1>
-        </header>
-        <section id="content">
-            <div>
-                <h2>Hobbies</h2>
-                <p>
-                    Indulging in hobbies is my key to joy and relaxation. One cherished pastime is reading, where books become portals to new realms of imagination and knowledge. Whether immersed in fiction or non-fiction, each book is a journey that broadens my horizons.
-                    <br />
-                    <br />
-                    <div class="div1">
-                        <img src="./reading.jpg" alt="Reading" height="300px" width="225px" usemap="#kobo">
-                        <map name="kobo">
-                            <area target="" alt="Kobo" title="Kobo" href="https://www.kobo.com/" coords="59,102,180,236" shape="rect">
-                        </map>
-                    </div>
-                    <br />
-                    Nowadays, watching videos and playing video games provide a unique form of entertainment. The visual narratives and interactive experiences captivate my imagination, offering a modern escape from reality.
-                    <br />
-                    <br />
-                    <div class="div1">
-                        <img src="./videos.jpg" alt="Videos" height="200px" width="300px" usemap="#netflix">
-                        <map name="netflix">
-                            <area alt="Netflix" title="Netflix" href="https://www.netflix.com/" coords="60,45,250,45,250,157,191,157,181,150,174,153,171,129,142,128,141,136,131,137,114,151,111,159,60,158" shape="poly">
-                        </map>
-                        <img src="./video games.jpg" alt="Video games" height="200px" width="134px" usemap="#fortnite">
-                        <map name="fortnite">
-                            <area alt="Fortnite" title="Fortnite" href="https://www.fortnite.com/" coords="65,80,122,72,125,117,65,117" shape="poly">
-                        </map>
-                    </div>
-                    <br />
-                    Music is a constant companion in my life, with its diverse melodies as a backdrop to various activities. The rhythmic tunes and soulful lyrics provide comfort and inspiration.
-                    <br />
-                    <br />
-                    <div class="div1">
-                        <img src="./listening.jpg" alt="Listening" height="200px" width="300px" usemap="#spotify">
-                        <map name="spotify">
-                            <area target="" alt="Spotify" title="Spotify" href="https://open.spotify.com/" coords="79,100,144,198,193,163,128,68" shape="poly">
-                        </map>
-                    </div>
-                    <br />
-                    In addition, incorporating exercising as a hobby adds a physical dimension to my pursuits. Whether it is a brisk morning jog or hitting the gym, exercising not only contributes to my physical well-being but also serves as a means of unwinding and maintaining balance in a busy life. It is a hobby that energizes body and mind, complementing the diverse activities that contribute to my overall joy and fulfillment.
-                    <br />
-                    <br />
-                    <div class="div1">
-                        <img src="./exercising.jpg" alt="Exercising" height="200px" width="300px">
-                    </div>
-                    <br />
-                    Moreover, my hobbies extend into the digital creative sphere. Programming is a stimulating challenge that allows me to build and innovate, while graphics designing lets me visually express ideas with a blend of art and technology.
-                    <br />
-                    <br />
-                    In essence, my hobbies are not merely activities but threads weaving joy, fulfillment, and exploration into the fabric of my daily life. From reading and watching videos to playing video games, listening to music, programming, and graphics designing, each hobby is a unique avenue through which I find happiness and creative expression.
-                </p>
-            </div>
-        </section>
+  </header>
+  <main id="main">
+    <h1>Things I Like</h1>
+    <div class="content">
+    <section class="block">
+      <h2>Hobbies</h2>
+      <p>Indulging in hobbies is my key to joy and relaxation. One cherished pastime is reading, where books become portals to new realms of imagination and knowledge. Whether immersed in fiction or non-fiction, each book is a journey that broadens my horizons.</p>
+      <figure class="media">
+        <img loading="lazy" src="./reading.jpg" alt="Reading" height="300" width="225" usemap="#kobo">
+        <map name="kobo">
+          <area  alt="Kobo" title="Kobo" href="https://www.kobo.com/" coords="59,102,180,236" shape="rect">
+        </map>
+      </figure>
+      <p>Nowadays, watching videos and playing video games provide a unique form of entertainment. The visual narratives and interactive experiences captivate my imagination, offering a modern escape from reality.</p>
+      <figure class="media">
+        <img loading="lazy" src="./videos.jpg" alt="Videos" height="200" width="300" usemap="#netflix">
+        <map name="netflix">
+          <area alt="Netflix" title="Netflix" href="https://www.netflix.com/" coords="60,45,250,45,250,157,191,157,181,150,174,153,171,129,142,128,141,136,131,137,114,151,111,159,60,158" shape="poly">
+        </map>
+        <img loading="lazy" src="./video-games.jpg" alt="Video games" height="200" width="134" usemap="#fortnite">
+        <map name="fortnite">
+          <area alt="Fortnite" title="Fortnite" href="https://www.fortnite.com/" coords="65,80,122,72,125,117,65,117" shape="poly">
+        </map>
+      </figure>
+      <p>Music is a constant companion in my life, with its diverse melodies as a backdrop to various activities. The rhythmic tunes and soulful lyrics provide comfort and inspiration.</p>
+      <figure class="media">
+        <img loading="lazy" src="./listening.jpg" alt="Listening" height="200" width="300" usemap="#spotify">
+        <map name="spotify">
+          <area  alt="Spotify" title="Spotify" href="https://open.spotify.com/" coords="79,100,144,198,193,163,128,68" shape="poly">
+        </map>
+      </figure>
+      <p>In addition, incorporating exercising as a hobby adds a physical dimension to my pursuits. Whether it is a brisk morning jog or hitting the gym, exercising not only contributes to my physical well-being but also serves as a means of unwinding and maintaining balance in a busy life. It is a hobby that energizes body and mind, complementing the diverse activities that contribute to my overall joy and fulfillment.</p>
+      <figure class="media">
+        <img loading="lazy" src="./exercising.jpg" alt="Exercising" height="200" width="300">
+      </figure>
+      <p>Moreover, my hobbies extend into the digital creative sphere. Programming is a stimulating challenge that allows me to build and innovate, while graphics designing lets me visually express ideas with a blend of art and technology.</p>
+      <p>In essence, my hobbies are not merely activities but threads weaving joy, fulfillment, and exploration into the fabric of my daily life. From reading and watching videos to playing video games, listening to music, programming, and graphics designing, each hobby is a unique avenue through which I find happiness and creative expression.</p>
+    </section>
     </div>
-    <footer>
-        <p>&copy; 2023 My Bio &nbsp;&nbsp; | 
-            <a href="https://www.facebook.com/" class="icon"><img src="./facebook.png" alt="Facebook" height="12px">&nbsp;&nbsp;Facebook</a>
-            <a href="https://www.instagram.com/" class="icon"><img src="./instagram.png" alt="Instagram" height="12px">&nbsp;&nbsp;Instagram</a>
-            <a href="https://www.twitter.com/" class="icon"><img src="./twitter.png" alt="Twitter" height="12px">&nbsp;&nbsp;Twitter</a>
-        </p>
-    </footer>
+  </main>
+  <footer class="site-footer">
+    <p>&copy; 2023 My Bio</p>
+    <p class="social">
+      <a href="https://github.com/Kairos-025" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0a8 8 0 0 0-2.53 15.59c.4.07.55-.17.55-.38v-1.33c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.06-.49.06-.49.8.06 1.23.83 1.23.83.72 1.22 1.88.87 2.34.66.07-.52.28-.87.5-1.07-1.78-.2-3.65-.89-3.65-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8 8 0 0 0 8 0z"/></svg><span>GitHub</span></a>
+      <a href="https://www.linkedin.com/in/ekemini-john-47730b226/" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M0 1.15C0 .52.52 0 1.18 0h13.64C15.48 0 16 .52 16 1.15v13.7c0 .63-.52 1.15-1.18 1.15H1.18C.52 16 0 15.48 0 14.85zM4.94 13.4V6.17H2.53v7.23zM3.74 5.18c.84 0 1.36-.56 1.36-1.25-.02-.71-.52-1.25-1.35-1.25-.82 0-1.36.54-1.36 1.25 0 .69.52 1.25 1.33 1.25zm4.93 8.22V9.36c0-.22.02-.43.08-.59.18-.43.57-.88 1.24-.88.88 0 1.23.67 1.23 1.65v3.86h2.4V9.25c0-2.22-1.18-3.25-2.77-3.25-1.28 0-1.86.7-2.18 1.2V6.17H6.27c.03.68 0 7.23 0 7.23z"/></svg><span>LinkedIn</span></a>
+    </p>
+  </footer>
 </body>
-
 </html>

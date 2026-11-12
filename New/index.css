@@ -1,40 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Kolker+Brush&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-}
-#section1{
-    /* margin-left: 10%; */
-    left: 1;
-    right: 70%;
-    display: none;
-}
-#section2{
+/* Kemz navbar: keeps the original fonts and hover effect */
+.site-nav { box-shadow: rgba(0, 0, 0, .24) 0 3px 8px; }
 
+.brand {
+  font-family: "Kolker Brush", cursive;
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 1;
 }
-#img1{
-    margin-top: 0px;
+.brand span { color: rgb(112, 108, 108); }
+
+.site-nav .nav-link {
+  margin: 0 6px;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-family: "Handlee", cursive;
+  font-size: 1.05rem;
+  transition: box-shadow .2s ease;
 }
-#design:hover{
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    border-radius: 5px;
-}
-@media (max-width: 680px) {
-    #section2{
-        display: none;
-    }
-    #section1{
-        display: flex;
-    }
-    #section3{
-        display: none;
-    }
-}
-@media (max-width: 490px) {
-    #section1{
-        /* display: flex; */
-        flex: none;
-        margin-top: 50px !important;
-    }
+.site-nav .nav-link:hover,
+.site-nav .nav-link:focus-visible {
+  box-shadow: rgb(38, 57, 77) 0 20px 30px -10px;
 }

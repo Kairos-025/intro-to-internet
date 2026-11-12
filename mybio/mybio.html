@@ -1,80 +1,55 @@
-<!--?xml version="1.0" encoding="UTF-8"?-->
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhmtl11/DTD/xhtml11.dtd">
-<!-- XML/XHTML boilerplate code -->
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head>
-    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
-        <title>My Bio</title>
-        <link rel="shortcut icon" href="./MYBio.png" type="image/x-icon">
-        <link rel="stylesheet" href="mycss.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Bio | My Bio</title>
+  <meta name="description" content="Ekemini John: about me.">
+  <link rel="icon" href="MYBio.png" type="image/png">
+  <link rel="stylesheet" href="mycss.css">
 </head>
-
-<body>  
-    <nav class="topnav">
-        <a href="mybio.html" style="margin: 0px; padding: 0px;">
-            <img src="./MYBio.png" alt="MyBio" width="100px" height="80px" style="margin: 0px; padding: 0px;">
-        </a>
-            <div class="split">
-                <a href="mybio.html" class="home" id="link">Home</a>
-                <a href="education.html" id="link">Education</a>
-                <a href="work.html" id="link">Work</a>
-                <a href="hobbies.html" id="link">Hobbies</a>
-            </div>
+<body id="top">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="topnav">
+    <a class="brand" href="mybio.html"><img src="MYBio.png" alt="My Bio home" width="100" height="80"></a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="mybio.html" aria-current="page">Home</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="hobbies.html">Hobbies</a></li>
+      </ul>
     </nav>
-    <div class="header">
-    <header>
-        <h1>About Me</h1>
-    </header>
-    <section id="content">
-        <div>
-            <h2>Introduction</h2>
-            <p>
-                In the vast realm of Computer Science, I, Ekemini John, embark on a journey fueled by curiosity, dedication, and an unyielding passion for technology. As a student pursuing a degree in Computer Science and a Computer Scientist, my expedition into the intricate web of coding has been a thrilling odyssey. This portfolio is a testament to my academic and professional voyage, highlighting my education, skills, experiences, and achievements in the ever-evolving landscape of technology.
-            </p>
-        </div>
-        <hr />
-        <div>
-            <h2>Conclusion</h2>
-            <p>
-                Reflecting on my Computer Science journey, I am acutely aware that this is just the beginning. The road ahead promises more challenges, discoveries, and opportunities for growth. The journey, marked by education, skills, experiences, and achievements, has shaped me into an individual who not only understands the language of code but also appreciates the artistry and innovation it can encapsulate.
-            <br />
-            <br />
-               I am eager to contribute my skills and enthusiasm to a dynamic and challenging environment. The world of technology is ever-evolving, and I am committed to evolving with it. My journey is an ongoing narrative, and each line of code I write, each problem I solve, and each project I undertake is a chapter in the story of my exploration of the vast universe of Computer Science.
-            <br />
-            <br />    
-                Thank you for accompanying me on this journey through my online portfolio. If you want to learn more about my experiences or explore potential collaborations, feel free to give me feedback.
-            </p>
-        </div>
-        <hr />
-        <div>
-            <h2>Works Cited</h2>
-            <p>
-                <ul>
-                    <li><b>Logo</b> (i.e. MYBio.png)</li>
-                    <a href="https://www.canva.com/"><i>Canva</i></a>
-                    <br />
-                    <br />
-                    <li><b>Text Icons</b> (i.e. facebook.png, instagram.png, twitter.png)</li>
-                    <a href="https://www.flaticon.com/"><i>Flaticon</i></a>
-                    <br />
-                    <br />
-                    <li><b>Images</b> (i.e. reading.jpg, videos.jpg, video games.jpg, listening.jpg, exercise.jpg)</li>
-                    <a href="https://www.unsplash.com/"><i>Unsplash</i></a>
-                    <br />
-                    <br />
-                    <li><b>Positions</b> (i.e. Positions in Software Engineering, Average Salary per year)</li>
-                    <a href="https://www.indeed.com/"><i>Indeed</i></a>
-                </ul>
-            </p>
-        </div>
+  </header>
+  <main id="main">
+    <h1>About Me</h1>
+    <div class="content">
+    <section class="block">
+      <h2>Introduction</h2>
+      <p>In the vast realm of Computer Science, I, Ekemini John, embark on a journey fueled by curiosity, dedication, and an unyielding passion for technology. As a student pursuing a degree in Computer Science and a Computer Scientist, my expedition into the intricate web of coding has been a thrilling odyssey. This portfolio is a testament to my academic and professional voyage, highlighting my education, skills, experiences, and achievements in the ever-evolving landscape of technology.</p>
+    </section>
+    <section class="block">
+      <h2>Conclusion</h2>
+      <p>Reflecting on my Computer Science journey, I am acutely aware that this is just the beginning. The road ahead promises more challenges, discoveries, and opportunities for growth. The journey, marked by education, skills, experiences, and achievements, has shaped me into an individual who not only understands the language of code but also appreciates the artistry and innovation it can encapsulate.</p>
+      <p>I am eager to contribute my skills and enthusiasm to a dynamic and challenging environment. The world of technology is ever-evolving, and I am committed to evolving with it. My journey is an ongoing narrative, and each line of code I write, each problem I solve, and each project I undertake is a chapter in the story of my exploration of the vast universe of Computer Science.</p>
+      <p>Thank you for accompanying me on this journey through my online portfolio. If you want to learn more about my experiences or explore potential collaborations, feel free to <a href="education.html#feedback">send me feedback</a>.</p>
+    </section>
+    <section class="block">
+      <h2>Works Cited</h2>
+      <ul class="cites">
+        <li><strong>Logo</strong> (MYBio.png): <a href="https://www.canva.com/" target="_blank" rel="noopener">Canva</a></li>
+        <li><strong>Images</strong> (reading.jpg, videos.jpg, video-games.jpg, listening.jpg, exercising.jpg): <a href="https://unsplash.com/" target="_blank" rel="noopener">Unsplash</a></li>
+        <li><strong>Positions</strong> (positions in software engineering, average salary per year): <a href="https://www.indeed.com/" target="_blank" rel="noopener">Indeed</a></li>
+      </ul>
     </section>
     </div>
-    <footer>
-        <p>&copy; 2023 My Bio &nbsp;&nbsp; | 
-            <a href="https://www.facebook.com/" class="icon"><img src="./facebook.png" alt="Facebook" height="12px">&nbsp;&nbsp;Facebook</a>
-            <a href="https://www.instagram.com/" class="icon"><img src="./instagram.png" alt="Instagram" height="12px">&nbsp;&nbsp;Instagram</a>
-            <a href="https://www.twitter.com/" class="icon"><img src="./twitter.png" alt="Twitter" height="12px">&nbsp;&nbsp;Twitter</a>
-        </p>
-    </footer>
+  </main>
+  <footer class="site-footer">
+    <p>&copy; 2023 My Bio</p>
+    <p class="social">
+      <a href="https://github.com/Kairos-025" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0a8 8 0 0 0-2.53 15.59c.4.07.55-.17.55-.38v-1.33c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.06-.49.06-.49.8.06 1.23.83 1.23.83.72 1.22 1.88.87 2.34.66.07-.52.28-.87.5-1.07-1.78-.2-3.65-.89-3.65-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8 8 0 0 0 8 0z"/></svg><span>GitHub</span></a>
+      <a href="https://www.linkedin.com/in/ekemini-john-47730b226/" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M0 1.15C0 .52.52 0 1.18 0h13.64C15.48 0 16 .52 16 1.15v13.7c0 .63-.52 1.15-1.18 1.15H1.18C.52 16 0 15.48 0 14.85zM4.94 13.4V6.17H2.53v7.23zM3.74 5.18c.84 0 1.36-.56 1.36-1.25-.02-.71-.52-1.25-1.35-1.25-.82 0-1.36.54-1.36 1.25 0 .69.52 1.25 1.33 1.25zm4.93 8.22V9.36c0-.22.02-.43.08-.59.18-.43.57-.88 1.24-.88.88 0 1.23.67 1.23 1.65v3.86h2.4V9.25c0-2.22-1.18-3.25-2.77-3.25-1.28 0-1.86.7-2.18 1.2V6.17H6.27c.03.68 0 7.23 0 7.23z"/></svg><span>LinkedIn</span></a>
+    </p>
+  </footer>
 </body>
-
 </html>
