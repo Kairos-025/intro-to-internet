@@ -36,15 +36,21 @@ a { color: #3d3d3d; }
 /* ---------- navigation ---------- */
 .topnav {
   position: sticky; top: 0; z-index: 10;
-  display: flex; align-items: center; justify-content: space-between; gap: 12px;
-  flex-wrap: wrap;
-  padding: 4px 24px;
+  padding: 4px 0;
   background: var(--bar);
   box-shadow: 0 10px 20px -10px #000;
 }
+/* same width as the white content card, so the logo lines up with its left edge
+   and the menu with its right edge */
+.nav-inner {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  flex-wrap: wrap;
+  width: min(820px, 100% - 32px);
+  margin: 0 auto;
+}
 .brand { display: block; line-height: 0; }
 .brand img { width: 100px; height: 80px; }
-.topnav ul { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
+.topnav ul { display: flex; justify-content: flex-end; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
 .topnav a:not(.brand) {
   display: block;
   padding: 10px 26px;
@@ -59,6 +65,7 @@ a { color: #3d3d3d; }
   background: var(--bar-dark);
   box-shadow: 0 10px 20px -10px #000;
 }
+
 
 /* ---------- page ---------- */
 main { padding: 48px 16px 80px; }
@@ -126,7 +133,7 @@ td.num { font-variant-numeric: tabular-nums; }
 /* ---------- small screens ---------- */
 @media (max-width: 700px) {
   :root { --nav-h: 150px; }
-  .topnav { justify-content: center; padding: 4px 8px 8px; }
+  .nav-inner { justify-content: center; width: calc(100% - 16px); padding-bottom: 4px; }
   .topnav a:not(.brand) { padding: 8px 14px; }
   main { padding: 28px 10px 56px; }
   .content { padding: 22px 16px; }

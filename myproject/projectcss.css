@@ -35,11 +35,17 @@ a { color: #8a5600; }
 /* ---------- navigation ---------- */
 .navbar {
   position: sticky; top: 0; z-index: 20;
-  display: flex; align-items: center; justify-content: space-between; gap: 12px;
-  flex-wrap: wrap;
-  padding: 4px 40px;
+  padding: 4px 0;
   background: var(--bar);
   box-shadow: 0 10px 20px -10px #000;
+}
+/* same width as the white content card, so the logo lines up with its left edge
+   and the menu with its right edge */
+.nav-inner {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  flex-wrap: wrap;
+  width: min(820px, 100% - 32px);
+  margin: 0 auto;
 }
 .brand { display: block; line-height: 0; }
 .brand img { width: 100px; height: 80px; }
@@ -79,6 +85,7 @@ a { color: #8a5600; }
 }
 .subnav-content a:hover, .subnav-content a:focus-visible { background: var(--bar); color: var(--accent); }
 .subnav-content a[aria-current="page"] { color: var(--accent); font-weight: 600; }
+
 
 /* ---------- page ---------- */
 main { padding: 48px 16px 40px; }
@@ -158,7 +165,7 @@ td.num { font-variant-numeric: tabular-nums; }
 /* ---------- small screens ---------- */
 @media (max-width: 700px) {
   html { scroll-padding-top: 170px; }
-  .navbar { justify-content: center; padding: 4px 8px 8px; }
+  .nav-inner { justify-content: center; width: calc(100% - 16px); padding-bottom: 4px; }
   .menu > li > a, .subnavbtn { padding: 10px 14px; }
   .subnav-content { right: 50%; transform: translateX(50%); }
   main { padding: 28px 10px 32px; }
